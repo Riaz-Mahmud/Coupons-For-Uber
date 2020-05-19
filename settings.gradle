@@ -1,0 +1,2 @@
+rootProject.name='Coupons for Uber'
+include ':app'

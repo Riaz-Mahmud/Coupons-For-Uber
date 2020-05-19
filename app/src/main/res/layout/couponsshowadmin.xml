@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/codeshowbackground">
+
+        <TextView
+            android:id="@+id/codeTitleAdminPanel"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Code Title"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coupon Details :"
+            android:textSize="18sp"/>
+
+        <TextView
+                android:id="@+id/CouponCodeAdminPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Code"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:visibility="visible"
+                />
+        <TextView
+            android:id="@+id/CouponStatusAdminPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="status"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:visibility="visible"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/ActiveCoupon"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text=" Active "
+                android:textColor="@color/white"
+                android:background="@color/green"
+                android:textSize="15sp"
+                android:visibility="visible"
+                />
+
+            <Button
+                android:id="@+id/DeactiveCoupon"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/ActiveCoupon"
+                android:layout_toRightOf="@+id/ActiveCoupon"
+                android:background="@color/ash"
+                android:text="Deactive"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="visible"/>
+
+            <Button
+                android:id="@+id/deleteCoupon"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/DeactiveCoupon"
+                android:layout_toRightOf="@+id/DeactiveCoupon"
+                android:background="@color/red"
+                android:text="Delete"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

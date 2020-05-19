@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        android:background="@drawable/codeshowbackground">
+
+        <TextView
+            android:id="@+id/codeTitle"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Free Rides New And Old Users"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coupon Details :"
+            android:textSize="18sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:id="@+id/barcodeImg"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/barcode"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="skdfaCode"
+                android:textSize="40sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/userslogo"/>
+            <TextView
+                android:id="@+id/usesTxtShowCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="172 Uses"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:layout_marginLeft="7dp"
+                android:layout_width="18sp"
+                android:layout_height="18sp"
+                android:src="@drawable/supermarket"/>
+            <TextView
+                android:id="@+id/savedTxtShowCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="115 Saved"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/codeShowBtn"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHOW CODE"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:textSize="25sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

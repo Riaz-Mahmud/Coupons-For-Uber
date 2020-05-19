@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Coupons for Uber</string>
+
+
+    <string name="mainActivityText">Presence of a third-party trademark does not mean that Coupons Codes has any relationship with that third-party or that the third-party endorses coupons Codes or its services.</string>
+
+    <string-array name="category">
+        <item>Discount Codes</item>
+        <item>Promo Codes</item>
+        <item>Cash Back</item>
+        <item>Hot Deals</item>
+        <item>Free Rides</item>
+        <item>Free Gifts</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cou">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy" />
+
+        <activity android:name=".privacyPolicy"
+            android:label="Privacy Policy"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/HeaderTheme"
+            ></activity>
+
+        <activity
+            android:name=".ShowAllCouponsAdmin"
+            android:label="All Coupons"
+            android:parentActivityName=".AdminBashBoard_Activity"
+            android:theme="@style/HeaderTheme" />
+        <activity
+            android:name=".AdminBashBoard_Activity"
+            android:label="Admin Panel"
+            android:theme="@style/HeaderTheme" />
+        <activity
+            android:name=".ShowCode"
+            android:label="Home"
+            android:parentActivityName=".CuponDashboard_Activity"
+            android:theme="@style/HeaderTheme" />
+        <activity
+            android:name=".CuponDashboard_Activity"
+            android:label="Coupons for Uber"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/HeaderTheme" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
